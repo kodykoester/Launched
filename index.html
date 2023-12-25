@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Launch Logs</title>
+</head>
+<body>
+
+    <div class="heading">
+        <h1>Launch Logs</h1>
+    </div>
+    <div class="container">
+
+        <form id="launchForm">
+            <label for="rocketInput">Rocket:</label>
+            <input type="text" id="rocketInput" required>
+
+            <label for="altitudeInput">Altitude:</label>
+            <input type="number" id="altitudeInput" required>
+
+            <label for="durationInput">Duration:</label>
+            <input type="number" id="durationInput" required>
+
+            <label for="engineInput">Engine:</label>
+            <input type="text" id="engineInput" required>
+
+            <label for="payloadInput">Payload:</label>
+            <input type="text" id="payloadInput" required>
+
+            <button type="button" id="addLaunchButton" onclick="addLaunch()">Add Launch</button>
+            <button type="button" id="showLaunchesButton" onclick="toggleLaunchList()">Show Launches</button>
+
+        </form>
+
+        <div class="list" id="launchList"></div>
+    </div>
+
+<script src="./script.js"></script>
+
+</body>
+</html>
